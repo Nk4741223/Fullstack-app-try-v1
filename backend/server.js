@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 const cardRouter = require("./routes/cards");
 const mongoose = require("mongoose");
-const PORT = 5000;
+
+const PORT = process.env.PORT || 5000;
 require("dotenv").config();
 
 //CROS対策
