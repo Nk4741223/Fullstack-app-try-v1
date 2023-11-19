@@ -6,7 +6,8 @@
   "scripts": {
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm install --prefix frontend && react-scripts build",
     "start": "node backend/server.js",
-    "start:dev": "nodemon backend/server.js"
+    "start:dev": "nodemon backend/server.js",
+    "start:prod": "serve -s build"
   },
   "author": "Nomu",
   "license": "ISC",
